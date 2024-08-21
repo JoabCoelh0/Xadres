@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Xadrez</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/Imagens/chess.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Gp
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Updated: Aug 15 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/Imagens/icons8-xadrez-100.png" alt="">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Peças</a></li>
+          <li><a href="#portfolio">Tabuleiro</a></li>
+          <li><a href="#team">Jogadas</a></li>
+          <li><a href="#contact">Contato</a></li>
+
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="https://www.jogar-xadrez.com/jogar-contra-computador.html" target="_blank">Jogar</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/Imagens/pexels-pranjall-kumar-150768-7849087.jpg " alt="" data-aos="fade-in">
+
+      <div class="container">
+
+        <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-6 col-lg-8">
+            <h2>Xadrez<span>.</span></h2>
+            <p>Descubra a estratégia por trás de cada movimento! Venha aprender xadrez e desafie sua mente de forma divertida e inteligente.</p>
+          </div>
+        </div>
+
+        <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <i class="fa-solid fa-chess-queen"></i>
+              <h3><a href="#rainha">Rainha</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-box">
+              <i class="fa-solid fa-chess-knight"></i>
+              <h3><a href="#cavaleiro">Cavaleiro</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <i class="fa-solid fa-chess-pawn"></i>
+              <h3><a href="#peao">Peão</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon-box">
+              <i class="fa-solid fa-chess-rook"></i>
+              <h3><a href="#torre">Torre</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
+            <div class="icon-box">
+              <i class="fa-solid fa-chess-bishop"></i>
+              <h3><a href="#bispo">Bispo</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
+            <div class="icon-box">
+              <i class="fa-solid fa-chess-king"></i>
+              <h3><a href="#rei">Rei</a></h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="assets/Imagens/messicr7.png" class="img-fluid" alt="" width="450px">
+          </div>
+          <div class="col-lg-6 order-2 order-lg-1 content">
+            <h3>Xadrez</h3>
+            <p class="fst-italic">
+              O xadrez é um jogo de planejamento e antecipação
+            </p>
+            <p>
+              O xadrez é um jogo de tabuleiro estratégico jogado entre dois jogadores. Cada jogador controla 16 peças: um rei, uma rainha, duas torres, dois bispos, dois cavalos e oito peões. O objetivo do jogo é dar "xeque-mate" ao rei adversário, o que significa colocá-lo em uma posição de ataque da qual ele não pode escapar.
+            </p>
+            <p>
+              O tabuleiro é composto por 64 casas alternadas em preto e branco. As peças se movem de formas diferentes: o peão avança uma casa por vez (ou duas na sua primeira jogada), o cavalo move-se em "L", o bispo em diagonais, a torre em linhas retas, a rainha combina os movimentos da torre e do bispo, e o rei se move uma casa em qualquer direção.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Conheça</h2>
+        <p>As peças e seus movimentos</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div id="rainha" class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-chess-queen"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Rainha</h3>
+              </a>
+              <p>A rainha é uma das peças mais poderosas do xadrez devido à sua versatilidade e alcance de movimento. Ela combina os movimentos da torre e do bispo, o que lhe permite se mover em qualquer direção.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div id="rei" class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-chess-king"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Rei</h3>
+              </a>
+              <p>O rei é a peça mais importante do xadrez, pois o objetivo do jogo é proteger o próprio rei e capturar o do adversário. No entanto, o rei é uma peça frágil em termos de movimento: ele pode se mover uma casa por vez em qualquer direção (horizontal, vertical ou diagonal).</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div id="cavaleiro" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div  class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-chess-knight"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Cavaleirio</h3>
+              </a>
+              <p>O cavalo é uma peça única no xadrez devido à forma como se move. Ele se desloca em um padrão de "L": duas casas em uma direção (horizontal ou vertical) e depois uma casa em uma direção perpendicular, ou vice-versa. O cavalo é a única peça que pode "pular" sobre outras peças, tanto aliadas quanto inimigas.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div id="torre" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-chess-rook"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Torre</h3>
+              </a>
+              <p>A torre é uma peça poderosa no xadrez, conhecida por sua força em linhas retas. Ela se move horizontalmente ou verticalmente pelo tabuleiro, quantas casas quiser, desde que não haja outras peças no caminho.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div id="bispo" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-chess-bishop"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Bispo</h3>
+              </a>
+              <p>
+                O bispo é uma peça que se move diagonalmente pelo tabuleiro, sem limitação de distância, desde que não haja outras peças em seu caminho. Cada jogador começa com dois bispos: um que se move apenas nas casas brancas e outro nas casas pretas.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div id="peao" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Peão</h3>
+              </a>
+              <p>O peão é a peça mais numerosa e, inicialmente, a menos poderosa no xadrez, mas também é fundamental para a estratégia do jogo. Cada jogador começa com oito peões, que formam a linha de frente de suas forças. Os peões se movem para a frente uma casa por vez. Na sua primeira jogada, eles têm a opção de avançar duas casas. Os peões capturam peças inimigas movendo-se uma casa na diagonal à frente.</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/Imagens/Xadrez de ouro no jogo de tabuleiro de xadrez para o conceito de liderança de metáfora de negócios _ Foto Grátis.jpeg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Pratique um pouco</h3>
+              <p>Que tal uma partida de xadrez? Vamos ver quem consegue dar o xeque-mate primeiro!</p>
+              <a class="cta-btn" href="https://www.jogar-xadrez.com/jogar-contra-computador.html" target="_blank">Jogar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    
+    <section id="portfolio" class="portfolio section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Tabuleiro</h2>
+        <p>Conheça como é o campo de batalha</p>
+      </div>
+
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/Imagens/tabuleiro de xadres.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <p>Tabuleiro</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/Imagens/Xadrez de ouro no jogo de tabuleiro de xadrez para o conceito de liderança de metáfora de negócios _ Foto Grátis.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Tabuleiro</h4>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/Imagens/3 Reasons You'll Love Chess.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Jogando</h4>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/Imagens/pexels-pranjall-kumar-150768-7849087.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Jogando</h4>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/Imagens/jogo-de-xadrez-para-criancas-980.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Tabuleiro</h4>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/Imagens/1025541.a4730b1b.668x375o.81e9bb.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Campionato2</h4>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center justify-content-between">
+
+          <div class="col-lg-5">
+            <img src="assets/Imagens/f4c4f72ef5d9f7904c5bf973e781d3e2.png" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6">
+
+            <h3 class="fw-bold fs-2 mb-3">Como é o tabuleiro</h3>
+            <p>
+              O tabuleiro de xadrez é composto por 64 casas organizadas em um quadrado de 8x8, alternando entre cores claras e escuras. As colunas são chamadas de "a" a "h", e as fileiras de "1" a "8".
+            </p>
+
+            <div class="row gy-4">
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Bispos</strong> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Cavaleiro</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Torres</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Peão</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Rei</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Rainha</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Jogadas</h2>
+        <p>Melhores jogadas</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/Imagens/joagada a imortal.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>A Imortal (1851) - Adolf Anderssen vs. Lionel Kieseritzky:</h4>
+                <span>Anderssen sacrificou suas duas torres e uma dama para conseguir um impressionante xeque-mate. Este jogo é conhecido como "A Imortal" devido à sua beleza e ousadia.</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/Imagens/lasker.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Xeque-Mate de Lasker (1895) - Emanuel Lasker vs. Johann Bauer</h4>
+                <span>Lasker realizou uma combinação espetacular de sacrifícios para dar xeque-mate com uma torre e um peão.</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/Imagens/marshal.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Xeque-Mate de Capablanca (1918) - José Raúl Capablanca vs. Frank Marshall</h4>
+                <span>Capablanca demonstrou sua habilidade tática com uma combinação precisa, levando a um xeque-mate elegante.</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/Imagens/maxresdefault.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Xeque-Mate de Fischer (1963) - Bobby Fischer vs. Mikhail Tal</h4>
+                <span>Fischer, então jovem, enfrentou o ex-campeão mundial Tal e executou uma combinação tática que culminou em um xeque-mate forçado.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section id="contact" class="contact section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contato</h2>
+        <p>Meus contatos</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div  class="mb-4 container" data-aos="fade-up" data-aos-delay="200">
+          <iframe class="col-lg-12" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15917.749110977635!2d-38.242754!3d-4.1340504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1724277843992!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Endereço</h3>
+                <p>Travessa Marinheiro Antonio Silva, Cascavel-CE, 2772</p>
+              </div>
+            </div>
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Telefone</h3>
+                <p>85 9 8514-5781</p>
+              </div>
+            </div>
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email</h3>
+                <p>Joabcoelho033@gmail.com</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Seu Nome" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Seu Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Objetivo" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Messagem" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Menssagem</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container text-center">
+        <p>© <span>JoabCoelho</span> <strong class="px-1 sitename">JB</strong></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
